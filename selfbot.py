@@ -10,7 +10,7 @@ intents.messages = True
 
 bot = commands.Bot(intents=intents, command_prefix='!', self_bot=True)
 
-with open('./config.json', 'r') as config_file:
+with open('./settings.json', 'r') as config_file:
     config_data = json.load(config_file)
 
 async def start_spammer():
